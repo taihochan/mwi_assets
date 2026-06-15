@@ -1,17 +1,52 @@
 {
   "id": "porcupine",
-  "status": "archived_in_batch_zip_pending_binary_sync",
+  "status": "archived_binary_sync_in_progress",
+  "type": "creature_monster",
+  "style_profile": "armored_quill_jrpg_fantasy_beast",
   "phaser": {
     "sprites_128": "models/porcupine/phaser/sprites_128/porcupine.png",
     "sprites_64": "models/porcupine/phaser/sprites_64/porcupine.png"
   },
   "parts": {
     "required": true,
-    "standard": "以 porcupine 為標準範本，需具備全身圖與各部位拆解，四肢需各自獨立檔案。",
-    "current_batch_note": "本批保留完整全身圖與 asset sheet；後續正式精修拆件時按 skunk 同規格拆 head/body/back_quills/tail/leg_front_left/leg_front_right/leg_back_left/leg_back_right。"
+    "canvas_recommendation": "256x384",
+    "files": [
+      "models/porcupine/parts/porcupine/head.png",
+      "models/porcupine/parts/porcupine/body.png",
+      "models/porcupine/parts/porcupine/back_quills.png",
+      "models/porcupine/parts/porcupine/tail.png",
+      "models/porcupine/parts/porcupine/leg_front_left.png",
+      "models/porcupine/parts/porcupine/leg_front_right.png",
+      "models/porcupine/parts/porcupine/leg_back_left.png",
+      "models/porcupine/parts/porcupine/leg_back_right.png"
+    ],
+    "layer_order": [
+      "back_quills",
+      "tail",
+      "body",
+      "leg_back_left",
+      "leg_back_right",
+      "leg_front_left",
+      "leg_front_right",
+      "head"
+    ],
+    "note": "porcupine 以標準範本歸檔：全身圖 + 背刺獨立 + 四肢四檔。"
   },
   "spine_ready": {
-    "required": true,
-    "attachments_dir": "models/porcupine/spine/porcupine/attachments"
+    "attachments_dir": "models/porcupine/spine/porcupine/attachments",
+    "attachments": [
+      "head.png",
+      "body.png",
+      "back_quills.png",
+      "tail.png",
+      "leg_front_left.png",
+      "leg_front_right.png",
+      "leg_back_left.png",
+      "leg_back_right.png"
+    ]
+  },
+  "reference": {
+    "whole_master": "models/porcupine/reference/porcupine_whole_master.png",
+    "asset_sheet": "models/porcupine/reference/porcupine_asset_sheet.png"
   }
 }
