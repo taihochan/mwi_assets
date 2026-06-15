@@ -1,0 +1,51 @@
+{
+  "batch": "batch01_skunk_porcupine",
+  "status": "archive_in_progress",
+  "items": {
+    "skunk": {
+      "manifest": "models/skunk/manifest.json",
+      "required_binary_paths": [
+        "models/skunk/phaser/sprites_128/skunk.png",
+        "models/skunk/phaser/sprites_64/skunk.png",
+        "models/skunk/parts/skunk/head.png",
+        "models/skunk/parts/skunk/body.png",
+        "models/skunk/parts/skunk/tail.png",
+        "models/skunk/parts/skunk/leg_front_left.png",
+        "models/skunk/parts/skunk/leg_front_right.png",
+        "models/skunk/parts/skunk/leg_back_left.png",
+        "models/skunk/parts/skunk/leg_back_right.png",
+        "models/skunk/spine/skunk/attachments/head.png",
+        "models/skunk/spine/skunk/attachments/body.png",
+        "models/skunk/spine/skunk/attachments/tail.png",
+        "models/skunk/spine/skunk/attachments/leg_front_left.png",
+        "models/skunk/spine/skunk/attachments/leg_front_right.png",
+        "models/skunk/spine/skunk/attachments/leg_back_left.png",
+        "models/skunk/spine/skunk/attachments/leg_back_right.png"
+      ]
+    },
+    "porcupine": {
+      "manifest": "models/porcupine/manifest.json",
+      "required_binary_paths": [
+        "models/porcupine/phaser/sprites_128/porcupine.png",
+        "models/porcupine/phaser/sprites_64/porcupine.png",
+        "models/porcupine/parts/porcupine/head.png",
+        "models/porcupine/parts/porcupine/body.png",
+        "models/porcupine/parts/porcupine/back_quills.png",
+        "models/porcupine/parts/porcupine/tail.png",
+        "models/porcupine/parts/porcupine/leg_front_left.png",
+        "models/porcupine/parts/porcupine/leg_front_right.png",
+        "models/porcupine/parts/porcupine/leg_back_left.png",
+        "models/porcupine/parts/porcupine/leg_back_right.png",
+        "models/porcupine/spine/porcupine/attachments/head.png",
+        "models/porcupine/spine/porcupine/attachments/body.png",
+        "models/porcupine/spine/porcupine/attachments/back_quills.png",
+        "models/porcupine/spine/porcupine/attachments/tail.png",
+        "models/porcupine/spine/porcupine/attachments/leg_front_left.png",
+        "models/porcupine/spine/porcupine/attachments/leg_front_right.png",
+        "models/porcupine/spine/porcupine/attachments/leg_back_left.png",
+        "models/porcupine/spine/porcupine/attachments/leg_back_right.png"
+      ]
+    }
+  },
+  "note": "README and manifests are already in GitHub. Binary PNG files are preserved in the batch ZIP and will be synced path-by-path when the connector accepts binary file commits."
+}
