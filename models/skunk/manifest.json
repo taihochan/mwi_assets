@@ -1,6 +1,8 @@
 {
   "id": "skunk",
-  "status": "archived_in_batch_zip_pending_binary_sync",
+  "status": "archived_binary_sync_in_progress",
+  "type": "creature_monster",
+  "style_profile": "dark_poison_jrpg_fantasy_beast",
   "phaser": {
     "sprites_128": "models/skunk/phaser/sprites_128/skunk.png",
     "sprites_64": "models/skunk/phaser/sprites_64/skunk.png"
@@ -17,7 +19,16 @@
       "models/skunk/parts/skunk/leg_back_left.png",
       "models/skunk/parts/skunk/leg_back_right.png"
     ],
-    "note": "四肢已規劃為四個獨立素材檔，後續 binary PNG 依此路徑同步。"
+    "layer_order": [
+      "tail",
+      "body",
+      "leg_back_left",
+      "leg_back_right",
+      "leg_front_left",
+      "leg_front_right",
+      "head"
+    ],
+    "note": "四肢已拆成四個獨立素材檔；頭、身體、尾巴也獨立。"
   },
   "spine_ready": {
     "attachments_dir": "models/skunk/spine/skunk/attachments",
@@ -30,5 +41,8 @@
       "leg_back_left.png",
       "leg_back_right.png"
     ]
+  },
+  "reference": {
+    "whole_master": "models/skunk/reference/skunk_whole_master.png"
   }
 }
