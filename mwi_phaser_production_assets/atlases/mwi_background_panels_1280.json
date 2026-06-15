@@ -1,0 +1,183 @@
+{
+  "frames": {
+    "swamp_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "aqua_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 240,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jungle_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 480,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "twilight_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 720,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "smelly_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 960,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gobo_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 1200,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "dungeon_background_panel": {
+      "frame": {
+        "x": 0,
+        "y": 1440,
+        "w": 1280,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 1280,
+        "h": 240
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "ChatGPT production atlas builder",
+    "version": "1.0",
+    "image": "mwi_background_panels_1280.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1280,
+      "h": 1680
+    },
+    "scale": "1"
+  }
+}
