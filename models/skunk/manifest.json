@@ -1,0 +1,34 @@
+{
+  "id": "skunk",
+  "status": "archived_in_batch_zip_pending_binary_sync",
+  "phaser": {
+    "sprites_128": "models/skunk/phaser/sprites_128/skunk.png",
+    "sprites_64": "models/skunk/phaser/sprites_64/skunk.png"
+  },
+  "parts": {
+    "required": true,
+    "canvas_recommendation": "256x384",
+    "files": [
+      "models/skunk/parts/skunk/head.png",
+      "models/skunk/parts/skunk/body.png",
+      "models/skunk/parts/skunk/tail.png",
+      "models/skunk/parts/skunk/leg_front_left.png",
+      "models/skunk/parts/skunk/leg_front_right.png",
+      "models/skunk/parts/skunk/leg_back_left.png",
+      "models/skunk/parts/skunk/leg_back_right.png"
+    ],
+    "note": "四肢已規劃為四個獨立素材檔，後續 binary PNG 依此路徑同步。"
+  },
+  "spine_ready": {
+    "attachments_dir": "models/skunk/spine/skunk/attachments",
+    "attachments": [
+      "head.png",
+      "body.png",
+      "tail.png",
+      "leg_front_left.png",
+      "leg_front_right.png",
+      "leg_back_left.png",
+      "leg_back_right.png"
+    ]
+  }
+}
