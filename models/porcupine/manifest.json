@@ -1,0 +1,17 @@
+{
+  "id": "porcupine",
+  "status": "archived_in_batch_zip_pending_binary_sync",
+  "phaser": {
+    "sprites_128": "models/porcupine/phaser/sprites_128/porcupine.png",
+    "sprites_64": "models/porcupine/phaser/sprites_64/porcupine.png"
+  },
+  "parts": {
+    "required": true,
+    "standard": "以 porcupine 為標準範本，需具備全身圖與各部位拆解，四肢需各自獨立檔案。",
+    "current_batch_note": "本批保留完整全身圖與 asset sheet；後續正式精修拆件時按 skunk 同規格拆 head/body/back_quills/tail/leg_front_left/leg_front_right/leg_back_left/leg_back_right。"
+  },
+  "spine_ready": {
+    "required": true,
+    "attachments_dir": "models/porcupine/spine/porcupine/attachments"
+  }
+}
