@@ -125,7 +125,99 @@ models/characters/
 
 ---
 
-## 4. 目前批次流程
+## 4. 風格統一要點
+
+整體風格固定為 **日式幻想 JRPG 魔物 / 碧藍幻想系高精細手繪感**，但不得直接複製官方角色或官方素材。
+
+### 美術風格
+
+- 高精度手繪感，輪廓清楚，暗部與高光明確。
+- 有幻想感飾品，例如項圈、吊墜、護腕、金屬飾片、水晶或符文。
+- 可有少量環繞特效提升氣勢，但主體圖不可烙入特效；特效需獨立成圖層。
+- 毛髮、尖刺、尾巴、翅膀等 silhouette 要清楚，不能碎成雜毛。
+- 保持一圖一主體，無背景、無白邊、無浮空殘塊。
+
+### 工程風格
+
+- 先定稿完整全身圖，再從同一設計拆出 parts / spine attachments，避免每個部位看起來像不同角色。
+- `phaser` 版用於立即顯示；`parts` 版用於拼接與局部動畫；`spine` 版用於未來骨架動畫。
+- 部位圖不能各自置中，必須維持組合後位置與骨架座標。
+- 可動部位、關節、尾巴、背刺、翅膀、飾品、特效都要獨立歸檔。
+
+---
+
+## 5. 範例：skunk
+
+`skunk` 的定位是 **暗屬性 / 毒霧系小型幻想野獸**。
+
+### skunk 風格要點
+
+- 主識別是黑白毛色與大蓬尾，白色條紋要從頭頂延伸到尾部。
+- 姿態偏低伏、警戒、朝左，適合戰鬥場景。
+- 可加入紫色毒霧、紫眼、皮革項圈、金屬鉚釘、吊墜等增加 JRPG 氣勢。
+- 毒霧或臭氣不可烙進主體，應另存 `effect_poison_mist.png` 或 particle 檔。
+
+### skunk 拆件建議
+
+```txt
+head.png
+body.png
+tail.png
+leg_front_left.png
+leg_front_right.png
+leg_back_left.png
+leg_back_right.png
+collar.png          # optional
+pendant.png         # optional
+effect_poison_mist.png # optional, independent effect layer
+```
+
+### skunk 注意事項
+
+- 四肢必須是四個獨立 PNG。
+- 尾巴是核心輪廓，需獨立檔，方便 idle 擺動。
+- Spine-ready 版需在肩、髖、膝/踝、尾根保留可旋轉重疊區。
+
+---
+
+## 6. 範例：porcupine
+
+`porcupine` 的定位是 **重甲刺獸 / 土晶或金屬屬性魔獸**。
+
+### porcupine 風格要點
+
+- 主識別是背刺，輪廓要像大型尖刺扇面。
+- 刺可帶金屬尖端、土晶碎片或金色高光，讓牠比普通豪豬更像 JRPG 魔物。
+- 身體低伏厚重，前爪強壯，像坦克型小 Boss。
+- 可加入頸圈、護腕、紅寶石吊墜、晶塵特效。
+- 土黃色晶塵、碎石、尖刺衝擊等特效要獨立圖層，不可烙進主體。
+
+### porcupine 拆件建議
+
+```txt
+head.png
+body.png
+back_quills.png
+tail.png
+leg_front_left.png
+leg_front_right.png
+leg_back_left.png
+leg_back_right.png
+collar.png          # optional
+pendant.png         # optional
+effect_earth_dust.png  # optional
+effect_quill_burst.png # optional
+```
+
+### porcupine 注意事項
+
+- `back_quills.png` 必須獨立，因為它可用於 idle 微動、attack 展刺或射刺動畫。
+- 如果要更精緻，可再拆 `quills_front.png / quills_mid.png / quills_back.png`。
+- 四肢一樣不能合併，要各自獨立檔。
+
+---
+
+## 7. 目前批次流程
 
 後續每完成一批素材，都會重新打包並同步整理到 `models/` 對應資料夾，避免素材傳承遺失。
 
